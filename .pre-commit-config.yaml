@@ -19,7 +19,9 @@ repos:
     hooks:
     -   id: isort
 
+# 不起作用
 -   repo: https://github.com/commitizen-tools/commitizen
     rev: "v4.1.0"
     hooks:
     -   id: commitizen
+        stages: [commit-msg]
