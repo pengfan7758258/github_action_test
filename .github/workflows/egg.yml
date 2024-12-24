@@ -1,1 +1,10 @@
 on: push
+
+jobs:
+  job1:
+    runs-on: ubuntu-latest
+    steps:
+    - run: pwd
+      name: 查看当前目录
+    - run: ls
+      name: 查看当前目录下的文件和文件夹
