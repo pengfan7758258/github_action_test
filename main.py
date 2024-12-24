@@ -19,3 +19,8 @@ def read_item(item_id: int, q: str = None):
 @app.get("/foods/{food_id}")
 def read_food(food_id: int, q: str = None):
     return {"item_id": food_id, "q": q}
+
+
+@app.get("/healthz")
+async def health_check():
+    return {"status": "ok"}
