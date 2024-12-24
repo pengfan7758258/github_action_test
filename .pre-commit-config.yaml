@@ -18,3 +18,8 @@ repos:
     rev: "5.13.2"
     hooks:
     -   id: isort
+
+-   repo: https://github.com/commitizen-tools/commitizen
+    rev: ""
+    hooks:
+    -   id: commitizen
